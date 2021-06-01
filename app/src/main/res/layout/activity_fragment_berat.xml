@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#b1c9de"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -95,10 +96,11 @@
 
         <Button
             android:id="@+id/btnKonvert"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="40dp"
+            android:backgroundTint="#f7f7f7"
             android:onClick="konversisuhu"
             android:text="CONVERT"
             android:textStyle="normal|bold"
