@@ -101,7 +101,7 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="40dp"
             android:onClick="konversisuhu"
-            android:text="Konvert"
+            android:text="CONVERT"
             android:textStyle="normal|bold"
             tools:ignore="OnClick" />
 
