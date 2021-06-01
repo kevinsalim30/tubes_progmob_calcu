@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import org.mariuszgromada.math.mxparser.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,7 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void updateText(String strToAdd) {
-        curDisplay.setText(strToAdd);
+        String oldStr = curDisplay.getText().toString();
+        int curPos = curDisplay.getSelectionStart();
+        String leftStr = oldStr.substring(0, curPos);
+        String rightStr = oldStr.substring(curPos);
+        curDisplay.setText(String.format("%s%s%s", leftStr, strToAdd, rightStr));
+        curDisplay.setSelection(curPos + strToAdd.length());
     }
 
     public void nolPush(View view) {
@@ -89,13 +96,9 @@ public class MainActivity extends AppCompatActivity {
         updateText(getResources().getString(R.string.tujuhText));
     }
 
-    public void delapanPush(View view) {
-        updateText(getResources().getString(R.string.delapanText));
-    }
+    public void delapanPush(View view) { updateText(getResources().getString(R.string.delapanText)); }
 
-    public void sembilanPush(View view) {
-        updateText(getResources().getString(R.string.sembilanText));
-    }
+    public void sembilanPush(View view) { updateText(getResources().getString(R.string.sembilanText)); }
 
     public void tambahPush(View view) {
         updateText(getResources().getString(R.string.tambahText));
@@ -113,26 +116,39 @@ public class MainActivity extends AppCompatActivity {
         updateText(getResources().getString(R.string.kaliText));
     }
 
-    public void bukaPush(View view) {
-        updateText(getResources().getString(R.string.kurungbukaText));
-    }
+    public void bukaPush(View view) { updateText(getResources().getString(R.string.kurungbukaText)); }
 
-    public void tutupPush(View view) {
-        updateText(getResources().getString(R.string.kurungtutupText));
-    }
+    public void tutupPush(View view) { updateText(getResources().getString(R.string.kurungtutupText)); }
 
     public void titikPush(View view) {
         updateText(getResources().getString(R.string.titikText));
     }
 
     public void clearPush(View view) {
-        updateText("");
+        curDisplay.setText("");
     }
 
     public void equalPush(View view) {
+        String userExp = curDisplay.getText().toString();
+        userExp = userExp.replaceAll(getResources().getString(R.string.bagiText), "/");
+        userExp = userExp.replaceAll(getResources().getString(R.string.kaliText), "*");
+
+        Expression exp = new Expression(userExp);
+        String result = String.valueOf(exp.calculate());
+
+        curDisplay.setText(result);
+        curDisplay.setSelection(result.length());
     }
 
     public void deletePush(View view) {
-    }
+        int cursorPos = curDisplay.getSelectionStart();
+        int textLen = curDisplay.getText().length();
 
+        if(cursorPos !=0 && textLen !=0){
+            SpannableStringBuilder selection = (SpannableStringBuilder) curDisplay.getText();
+            selection.replace(cursorPos-1, cursorPos, "");
+            curDisplay.setText(selection);
+            curDisplay.setSelection(cursorPos-1);
+        }
+    }
 }
