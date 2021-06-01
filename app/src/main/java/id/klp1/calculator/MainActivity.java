@@ -126,10 +126,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clearPush(View view) {
         curDisplay.setText("");
+        prevCalcu.setText("");
     }
 
     public void equalPush(View view) {
         String userExp = curDisplay.getText().toString();
+
+        prevCalcu.setText(userExp);
+
         userExp = userExp.replaceAll(getResources().getString(R.string.bagiText), "/");
         userExp = userExp.replaceAll(getResources().getString(R.string.kaliText), "*");
 
