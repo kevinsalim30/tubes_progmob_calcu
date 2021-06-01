@@ -46,35 +46,35 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     v.getContext().startActivity(intent);
 
                 }else if (position==2){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity2.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==3){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity3.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==4){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity4.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==5){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity5.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==6){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity6.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==7){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity7.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==8){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity8.class);
                     v.getContext().startActivity(intent);
 
                 }else if (position==9){
-                    Intent intent = new Intent(v.getContext(), CurrencyActivity1.class);
+                    Intent intent = new Intent(v.getContext(), CurrencyActivity9.class);
                     v.getContext().startActivity(intent);
 
                 }
