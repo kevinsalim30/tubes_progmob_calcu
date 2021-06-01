@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="satuanArrayBerat">
+        <item>Kilogram</item>
+        <item>Hektogram</item>
+        <item>Dekagram</item>
+        <item>Gram</item>
+        <item>Desigram</item>
+        <item>Centigram</item>
+        <item>Miligram</item>
+    </string-array>
+</resources>

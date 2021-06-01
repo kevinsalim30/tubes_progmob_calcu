@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="satuText">1</string>
+    <string name="duaText">2</string>
+    <string name="tigaText">3</string>
+    <string name="empatText">4</string>
+    <string name="limaText">5</string>
+    <string name="enamText">6</string>
+    <string name="tujuhText">7</string>
+    <string name="delapanText">8</string>
+    <string name="sembilanText">9</string>
+    <string name="nolText">0</string>
+
+    <string name="clearText">C</string>
+    <string name="deleteText">Del</string>
+    <string name="kurungbukaText">(</string>
+    <string name="kurungtutupText">)</string>
+    <string name="tambahText">+</string>
+    <string name="kurangText">-</string>
+    <string name="kaliText">×</string>
+    <string name="bagiText">÷</string>
+    <string name="equalText">=</string>
+    <string name="titikText">.</string>
+
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="textview">TextView</string>
+
+    <string-array name="Currency">
+        <item>USD to IDR</item>
+        <item>IDR to USD</item>
+        <item>EUR to IDR</item>
+        <item>IDR to EUR</item>
+        <item>GBP to IDR</item>
+        <item>IDR to GBP</item>
+        <item>JPY to IDR</item>
+        <item>IDR to JPY</item>
+        <item>SGD to IDR</item>
+        <item>IDR to SGD</item>
+    </string-array>
+    <string name="title_activity_menu_satuan">MenuSatuan</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_satuan_tab">SatuanActivityTab</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+</resources>
