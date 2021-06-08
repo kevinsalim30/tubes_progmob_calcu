@@ -20,7 +20,7 @@
             android:name=".SatuanActivityTab"
             android:label="@string/title_activity_satuan_tab"
             android:theme="@style/Theme.Calculator.NoActionBar" />
-        <activity android:name=".MenuSatuanActivity" />
+        <activity android:name=".Activity_Satuan" />
         <activity android:name=".CurrencyActivity9" />
         <activity android:name=".CurrencyActivity8" />
         <activity android:name=".CurrencyActivity7" />
@@ -31,8 +31,8 @@
         <activity android:name=".CurrencyActivity2" />
         <activity android:name=".CurrencyActivity1" />
         <activity android:name=".CurrencyActivity0" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity"
+        <activity android:name=".Activity_Currency" />
+        <activity android:name=".Activity_Calculator"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

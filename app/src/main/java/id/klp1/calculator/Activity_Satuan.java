@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuSatuanActivity extends AppCompatActivity {
+public class Activity_Satuan extends AppCompatActivity {
 
     ViewPager viewPager;
     TabLayout tabLayout;

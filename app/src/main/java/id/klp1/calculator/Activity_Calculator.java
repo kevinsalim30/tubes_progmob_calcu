@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import org.mariuszgromada.math.mxparser.*;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity_Calculator extends AppCompatActivity {
 
     private TextView prevCalcu;
     private EditText curDisplay;
@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCurr() {
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, Activity_Currency.class);
         startActivity(intent);
     }
 
     public void openSatuan() {
-        Intent intent = new Intent(this, MenuSatuanActivity.class);
+        Intent intent = new Intent(this, Activity_Satuan.class);
         startActivity(intent);
     }
 

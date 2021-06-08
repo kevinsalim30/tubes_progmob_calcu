@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-public class MainActivity2 extends AppCompatActivity {
+public class Activity_Currency extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
